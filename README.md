@@ -76,8 +76,11 @@ Transaction-level sales data.
 Sales rep metadata and performance targets.
 These datasets were exported and loaded into Excel and Power BI for further analysis.
 
-<img width="642" height="388" alt="image" src="https://github.com/user-attachments/assets/3ce1e651-286d-4074-92d1-cfbb0e9791bb" caption="Sales Dataset in excel"/>
-<img width="201" height="109" alt="image" src="https://github.com/user-attachments/assets/4a86b940-fded-4f24-aed5-4b0e7c989e3a" caption="Sales rep data in excel" />
+<img width="642" height="388" alt="image" src="https://github.com/user-attachments/assets/3ce1e651-286d-4074-92d1-cfbb0e9791bb" />
+Preview of the table Sales Dataset in Excel
+
+<img width="201" height="109" alt="image" src="https://github.com/user-attachments/assets/4a86b940-fded-4f24-aed5-4b0e7c989e3a"  />
+Preview Sales rep data in Excel.
 
 
 
@@ -121,7 +124,8 @@ Key steps
 •	Prepared sales rep data for relationship modeling
 (These fields appear in the final Power BI table view and are used across measures and visuals.)
 
-<img width="786" height="335" alt="Screenshot 2026-02-01 210233" src="https://github.com/user-attachments/assets/8a7f2505-9135-4e06-8b56-203d0d5abda0" caption="final sales dataset in powerbi"/>
+<img width="786" height="335" alt="Screenshot 2026-02-01 210233" src="https://github.com/user-attachments/assets/8a7f2505-9135-4e06-8b56-203d0d5abda0" />
+Final sales dataset in Power BI
 
 
 Data Modeling (Power BI)
@@ -147,8 +151,10 @@ Selecting a Sales Rep slicer value (e.g., Chidinma) and having all KPIs/visuals 
 Analyzing product performance by rep, region, and city without duplicating data.
 
 DATA MODEL DIAGRAM 
-<img width="508" height="334" alt="image" src="https://github.com/user-attachments/assets/f6e7421a-46d5-464a-b748-79f9884d4dd3" />
 
+<img width="508" height="334" alt="image" src="https://github.com/user-attachments/assets/f6e7421a-46d5-464a-b748-79f9884d4dd3" />
+The relationship uses single-direction filtering from Sales Reps to Sales Dataset
+to ensure consistent aggregation and predictable filtering behavior.
 
 **DAX Measures**
 Core metrics were implemented as measures to ensure visuals remain filter-aware.
