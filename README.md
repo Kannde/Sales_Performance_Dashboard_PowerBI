@@ -5,6 +5,7 @@ This project demonstrates an end-to-end sales analytics workflow using Power BI,
 
 The data is simulated, but it was stored, queried, and extracted from a real MySQL database to closely mirror a real-world analytics environment.
 ________________________________________
+
 Business Context & Objectives
 Sales and operations teams often need fast, reliable answers to questions such as:
 •	Where is revenue coming from?
@@ -26,6 +27,7 @@ The dashboard is designed to answer the following:
 7.	How does performance change when slicing by specific products and sales reps?
 
 ________________________________________
+
 **Data Source & Database Design**
 	Database: retail_db (MySQL)
    Data Type: Simulated transactional sales data
@@ -37,6 +39,7 @@ Tables Used
    o	Sales representative metadata and targets
 
 ________________________________________
+
 **Data Acquisition (MySQL)**
 
 Data was extracted directly from the MySQL database using SQL queries.
@@ -73,10 +76,14 @@ Transaction-level sales data.
 Sales rep metadata and performance targets.
 These datasets were exported and loaded into Excel and Power BI for further analysis.
 ________________________________________
+
 <img width="642" height="388" alt="image" src="https://github.com/user-attachments/assets/3ce1e651-286d-4074-92d1-cfbb0e9791bb" />
+
 Preview of the table Sales Dataset in Excel
 ________________________________________
+
 <img width="201" height="109" alt="image" src="https://github.com/user-attachments/assets/4a86b940-fded-4f24-aed5-4b0e7c989e3a"  />
+
 Preview Sales rep data in Excel.
 ________________________________________
 
@@ -105,6 +112,7 @@ Determine which insights and comparisons would be most valuable to visualize in 
 
 This step helped define dashboard focus areas and prevented unnecessary or redundant visuals later in Power BI.
 ________________________________________
+
 **Data Transformation (Power Query – ETL)**
 Transformations were performed in Power Query to prepare the dataset for analysis and reporting.
 Key steps
@@ -124,9 +132,11 @@ Key steps
 ________________________________________
 
 <img width="786" height="335" alt="Screenshot 2026-02-01 210233" src="https://github.com/user-attachments/assets/8a7f2505-9135-4e06-8b56-203d0d5abda0" />
+
 Final sales dataset in Power BI
 
 ________________________________________
+
 Data Modeling (Power BI)
 
 The Power BI model uses two tables:
@@ -207,6 +217,7 @@ Dashboard overview
 ________________________________________
 
 This view shows the report filtered by **Sales Rep = Chidinma** and **Product = Office Chair Pro**, demonstrating dynamic KPI updates and cross-filtering across visuals.
+
 ________________________________________
 
 <img width="590" height="328" alt="image" src="https://github.com/user-attachments/assets/231a43e1-4e7c-4da0-a443-7fae5743ea39" />
@@ -253,6 +264,7 @@ ________________________________________
 
 
 ________________________________________
+
 Portfolio Note
 
 This project is part of an ongoing effort to document analytics projects using realistic data pipelines and professional BI practices, providing a transparent record of skills development and analytical thinking.
