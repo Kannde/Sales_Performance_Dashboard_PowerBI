@@ -152,6 +152,7 @@ Analyzing product performance by rep, region, and city without duplicating data.
 DATA MODEL DIAGRAM 
 
 <img width="508" height="334" alt="image" src="https://github.com/user-attachments/assets/f6e7421a-46d5-464a-b748-79f9884d4dd3" />
+
 The relationship uses single-direction filtering from Sales Reps to Sales Dataset
 to ensure consistent aggregation and predictable filtering behavior.
 
@@ -209,6 +210,8 @@ This view shows the report filtered by **Sales Rep = Chidinma** and **Product = 
 ________________________________________
 
 <img width="590" height="328" alt="image" src="https://github.com/user-attachments/assets/231a43e1-4e7c-4da0-a443-7fae5743ea39" />
+
+________________________________________
 
 Key Insights
 1. Revenue and profit are concentrated in specific cities, highlighting regional opportunities.
