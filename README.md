@@ -158,6 +158,7 @@ to ensure consistent aggregation and predictable filtering behavior.
 ________________________________________
 
 **DAX Measures**
+
 Core metrics were implemented as measures to ensure visuals remain filter-aware.
 
 Total Revenue = SUM('Sales Dataset'[Revenue])
@@ -170,11 +171,13 @@ Sales Volume = SUM('Sales Dataset'[Quantity])
 
 Profit Margin = DIVIDE([Total Profit], [Total Revenue])
 
+________________________________________
+
+
 **Dashboard Design & Interactivity**
 
 The dashboard is designed to support both executive overview and detailed analysis.
 
-________________________________________
 
 Design Principles
 
@@ -197,11 +200,14 @@ Slicers allow deep drill-down by:
 1. Product
 2 . Sales Representative
 ________________________________________
+
 Dashboard overview
 <img width="627" height="358" alt="Screenshot 2026-02-01 123851" src="https://github.com/user-attachments/assets/103ec053-7637-4914-b49b-d6ead8495b93" />
 ________________________________________
+
 This view shows the report filtered by **Sales Rep = Chidinma** and **Product = Office Chair Pro**, demonstrating dynamic KPI updates and cross-filtering across visuals.
 ________________________________________
+
 <img width="590" height="328" alt="image" src="https://github.com/user-attachments/assets/231a43e1-4e7c-4da0-a443-7fae5743ea39" />
 
 Key Insights
@@ -211,12 +217,14 @@ Key Insights
 4. Monthly revenue spikes suggest seasonal or campaign-driven sales.
 5. 	Online sales slightly outperform store sales for selected products.
 ________________________________________
+
 Limitations
 •	Data is simulated and does not represent real financial results.
 •	Customer-level profitability is not included.
 •	Marketing spend, returns, and operational overheads are excluded.
 •	Limited time range restricts long-term trend analysis.
 ________________________________________
+
 Future Enhancements
 •	Add customer segmentation and lifetime value analysis
 •	Incorporate profit margin trends by product and rep
