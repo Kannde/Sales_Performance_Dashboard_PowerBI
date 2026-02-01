@@ -146,6 +146,10 @@ Selecting a Sales Rep slicer value (e.g., Chidinma) and having all KPIs/visuals 
 
 Analyzing product performance by rep, region, and city without duplicating data.
 
+DATA MODEL DIAGRAM 
+<img width="508" height="334" alt="image" src="https://github.com/user-attachments/assets/f6e7421a-46d5-464a-b748-79f9884d4dd3" />
+
+
 **DAX Measures**
 Core metrics were implemented as measures to ensure visuals remain filter-aware.
 
@@ -167,6 +171,11 @@ This view shows the report filtered by **Sales Rep = Chidinma** and **Product = 
 <img width="590" height="328" alt="image" src="https://github.com/user-attachments/assets/231a43e1-4e7c-4da0-a443-7fae5743ea39" />
 
 
+## How to Run and Explore
 
+1. Download and open the `.pbix` file in Power BI Desktop (minimum version: x.x).
+2. Click on slicers (Product, Sales Rep) to filter visuals dynamically.
+3. Hover over charts to see tooltips with supporting metrics.
+4. Click different visuals to observe cross-filtering behavior.
 
 
