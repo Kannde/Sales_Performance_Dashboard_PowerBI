@@ -120,7 +120,9 @@ Key steps
 •	Year
 •	Prepared sales rep data for relationship modeling
 (These fields appear in the final Power BI table view and are used across measures and visuals.)
+
 ________________________________________
+
 <img width="786" height="335" alt="Screenshot 2026-02-01 210233" src="https://github.com/user-attachments/assets/8a7f2505-9135-4e06-8b56-203d0d5abda0" />
 Final sales dataset in Power BI
 
@@ -152,7 +154,9 @@ DATA MODEL DIAGRAM
 <img width="508" height="334" alt="image" src="https://github.com/user-attachments/assets/f6e7421a-46d5-464a-b748-79f9884d4dd3" />
 The relationship uses single-direction filtering from Sales Reps to Sales Dataset
 to ensure consistent aggregation and predictable filtering behavior.
+
 ________________________________________
+
 **DAX Measures**
 Core metrics were implemented as measures to ensure visuals remain filter-aware.
 
@@ -169,7 +173,9 @@ Profit Margin = DIVIDE([Total Profit], [Total Revenue])
 **Dashboard Design & Interactivity**
 
 The dashboard is designed to support both executive overview and detailed analysis.
+
 ________________________________________
+
 Design Principles
 
 KPI cards provide an immediate performance snapshot
