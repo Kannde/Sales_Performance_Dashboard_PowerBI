@@ -169,12 +169,66 @@ Sales Volume = SUM('Sales Dataset'[Quantity])
 
 Profit Margin = DIVIDE([Total Profit], [Total Revenue])
 
+**Dashboard Design & Interactivity**
+
+The dashboard is designed to support both executive overview and detailed analysis.
+
+Design Principles
+
+KPI cards provide an immediate performance snapshot
+
+Semantic color usage:
+
+Revenue → Green
+
+Profit → Green
+
+COGS → Red (cost emphasis)
+
+Combo charts used to compare volume vs value
+
+Tooltips added to explain anomalies without visual clutter
+
+Slicers allow deep drill-down by:
+
+1. Product
+2 .Sales Representative
+
 Dashboard overview
 <img width="627" height="358" alt="Screenshot 2026-02-01 123851" src="https://github.com/user-attachments/assets/103ec053-7637-4914-b49b-d6ead8495b93" />
-
+________________________________________
 This view shows the report filtered by **Sales Rep = Chidinma** and **Product = Office Chair Pro**, demonstrating dynamic KPI updates and cross-filtering across visuals.
-
+________________________________________
 <img width="590" height="328" alt="image" src="https://github.com/user-attachments/assets/231a43e1-4e7c-4da0-a443-7fae5743ea39" />
+
+Key Insights
+•	Revenue and profit are concentrated in specific cities, highlighting regional opportunities.
+•	High sales volume does not always equate to high profitability.
+•	Sales representative performance varies significantly by product and region.
+•	Monthly revenue spikes suggest seasonal or campaign-driven sales.
+•	Online sales slightly outperform store sales for selected products.
+________________________________________
+Limitations
+•	Data is simulated and does not represent real financial results.
+•	Customer-level profitability is not included.
+•	Marketing spend, returns, and operational overheads are excluded.
+•	Limited time range restricts long-term trend analysis.
+________________________________________
+Future Enhancements
+•	Add customer segmentation and lifetime value analysis
+•	Incorporate profit margin trends by product and rep
+•	Include sales targets vs actual performance
+•	Expand dataset to cover a full fiscal year
+•	Integrate forecasting and variance analysis
+________________________________________
+Tools Used
+•	MySQL – Data storage and extraction
+•	Excel – Exploratory analysis using Pivot Tables
+•	Power BI – Data modeling, DAX, visualization
+•	Power Query – Data transformation
+•	SQL – Data extraction logic
+
+
 
 
 ## How to Run and Explore
@@ -183,5 +237,11 @@ This view shows the report filtered by **Sales Rep = Chidinma** and **Product = 
 2. Click on slicers (Product, Sales Rep) to filter visuals dynamically.
 3. Hover over charts to see tooltips with supporting metrics.
 4. Click different visuals to observe cross-filtering behavior.
+
+
+
+Portfolio Note
+
+This project is part of an ongoing effort to document analytics projects using realistic data pipelines and professional BI practices, providing a transparent record of skills development and analytical thinking.
 
 
