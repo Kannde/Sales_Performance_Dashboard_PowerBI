@@ -4,7 +4,7 @@
 This project demonstrates an end-to-end sales analytics workflow using Power BI, starting from data extraction from a MySQL database, through exploratory analysis in Excel, data transformation and modeling in Power BI, DAX calculations, and finally an interactive dashboard for business insights.
 
 The data is simulated, but it was stored, queried, and extracted from a real MySQL database to closely mirror a real-world analytics environment.
-
+________________________________________
 Business Context & Objectives
 Sales and operations teams often need fast, reliable answers to questions such as:
 •	Where is revenue coming from?
@@ -14,9 +14,7 @@ Sales and operations teams often need fast, reliable answers to questions such a
 This project was built to answer these questions using industry-standard BI tools and workflows.
 
 This dashboard was built to provide clear, actionable answers to these questions through interactive visuals and KPIs.
-
-Key Business Questions
-
+________________________________________
 Key Business Questions
 The dashboard is designed to answer the following:
 1.	How do revenue, cost (COGS), and profit perform overall?
@@ -27,19 +25,18 @@ The dashboard is designed to answer the following:
 6.	How do sales channels (Online vs Store) compare?
 7.	How does performance change when slicing by specific products and sales reps?
 
-
+________________________________________
 **Data Source & Database Design**
-•	Database: retail_db (MySQL)
-•	Data Type: Simulated transactional sales data
-•	Purpose: Portfolio and skills demonstration using real analytics workflows
+	Database: retail_db (MySQL)
+   Data Type: Simulated transactional sales data
+   Purpose: Portfolio and skills demonstration using real analytics workflows
 Tables Used
 1.	sales_transactions
    o	Transaction-level sales data (one row per product per sale)
 2.	sales_rep_table
    o	Sales representative metadata and targets
 
-
-
+________________________________________
 **Data Acquisition (MySQL)**
 
 Data was extracted directly from the MySQL database using SQL queries.
@@ -75,13 +72,13 @@ Transaction-level sales data.
 2.	sales_rep_table (Sales Reps / Dimension Table)
 Sales rep metadata and performance targets.
 These datasets were exported and loaded into Excel and Power BI for further analysis.
-
+________________________________________
 <img width="642" height="388" alt="image" src="https://github.com/user-attachments/assets/3ce1e651-286d-4074-92d1-cfbb0e9791bb" />
 Preview of the table Sales Dataset in Excel
-
+________________________________________
 <img width="201" height="109" alt="image" src="https://github.com/user-attachments/assets/4a86b940-fded-4f24-aed5-4b0e7c989e3a"  />
 Preview Sales rep data in Excel.
-
+________________________________________
 
 
 **Exploratory Analysis (Excel)**
@@ -107,7 +104,7 @@ Channel
 Determine which insights and comparisons would be most valuable to visualize in Power BI
 
 This step helped define dashboard focus areas and prevented unnecessary or redundant visuals later in Power BI.
-
+________________________________________
 **Data Transformation (Power Query – ETL)**
 Transformations were performed in Power Query to prepare the dataset for analysis and reporting.
 Key steps
@@ -123,11 +120,11 @@ Key steps
 •	Year
 •	Prepared sales rep data for relationship modeling
 (These fields appear in the final Power BI table view and are used across measures and visuals.)
-
+________________________________________
 <img width="786" height="335" alt="Screenshot 2026-02-01 210233" src="https://github.com/user-attachments/assets/8a7f2505-9135-4e06-8b56-203d0d5abda0" />
 Final sales dataset in Power BI
 
-
+________________________________________
 Data Modeling (Power BI)
 
 The Power BI model uses two tables:
@@ -155,7 +152,7 @@ DATA MODEL DIAGRAM
 <img width="508" height="334" alt="image" src="https://github.com/user-attachments/assets/f6e7421a-46d5-464a-b748-79f9884d4dd3" />
 The relationship uses single-direction filtering from Sales Reps to Sales Dataset
 to ensure consistent aggregation and predictable filtering behavior.
-
+________________________________________
 **DAX Measures**
 Core metrics were implemented as measures to ensure visuals remain filter-aware.
 
@@ -172,7 +169,7 @@ Profit Margin = DIVIDE([Total Profit], [Total Revenue])
 **Dashboard Design & Interactivity**
 
 The dashboard is designed to support both executive overview and detailed analysis.
-
+________________________________________
 Design Principles
 
 KPI cards provide an immediate performance snapshot
@@ -185,15 +182,15 @@ Profit → Green
 
 COGS → Red (cost emphasis)
 
-Combo charts used to compare volume vs value
+Combo charts are used to compare volume vs value
 
 Tooltips added to explain anomalies without visual clutter
 
 Slicers allow deep drill-down by:
 
 1. Product
-2 .Sales Representative
-
+2 . Sales Representative
+________________________________________
 Dashboard overview
 <img width="627" height="358" alt="Screenshot 2026-02-01 123851" src="https://github.com/user-attachments/assets/103ec053-7637-4914-b49b-d6ead8495b93" />
 ________________________________________
@@ -202,11 +199,11 @@ ________________________________________
 <img width="590" height="328" alt="image" src="https://github.com/user-attachments/assets/231a43e1-4e7c-4da0-a443-7fae5743ea39" />
 
 Key Insights
-•	Revenue and profit are concentrated in specific cities, highlighting regional opportunities.
-•	High sales volume does not always equate to high profitability.
-•	Sales representative performance varies significantly by product and region.
-•	Monthly revenue spikes suggest seasonal or campaign-driven sales.
-•	Online sales slightly outperform store sales for selected products.
+1. Revenue and profit are concentrated in specific cities, highlighting regional opportunities.
+2. High sales volume does not always equate to high profitability.
+3. Sales representative performance varies significantly by product and region.
+4. Monthly revenue spikes suggest seasonal or campaign-driven sales.
+5. 	Online sales slightly outperform store sales for selected products.
 ________________________________________
 Limitations
 •	Data is simulated and does not represent real financial results.
@@ -222,14 +219,13 @@ Future Enhancements
 •	Integrate forecasting and variance analysis
 ________________________________________
 Tools Used
-•	MySQL – Data storage and extraction
-•	Excel – Exploratory analysis using Pivot Tables
-•	Power BI – Data modeling, DAX, visualization
-•	Power Query – Data transformation
-•	SQL – Data extraction logic
+1. MySQL – Data storage and extraction
+2. Excel – Exploratory analysis using Pivot Tables
+3. Power BI – Data modeling, DAX, visualization
+4. Power Query – Data transformation
+5. SQL – Data extraction logic
 
-
-
+________________________________________
 
 ## How to Run and Explore
 
@@ -239,7 +235,7 @@ Tools Used
 4. Click different visuals to observe cross-filtering behavior.
 
 
-
+________________________________________
 Portfolio Note
 
 This project is part of an ongoing effort to document analytics projects using realistic data pipelines and professional BI practices, providing a transparent record of skills development and analytical thinking.
